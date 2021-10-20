@@ -1,0 +1,10 @@
+<div *ngIf="!loading" id="content">
+    <img src="https://jpimg.com.br/uploads/2019/01/kanye-west-1024x768.jpg" alt="">
+    <h1>"{{ quote }}"</h1>
+
+    <button (click)="fetchQuote()">Another one</button>
+</div>
+
+<div *ngIf="loading" id="loading">
+    Loading...
+</div>
